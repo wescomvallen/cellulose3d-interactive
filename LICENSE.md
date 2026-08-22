@@ -3,7 +3,7 @@
 
 1a. The Cellulose3D Digital Works License is an end-user and developer license agreement with policies covering distribution, commercial use, archiving, use of copyrighted content, derivative works, and user generated content for a given digital asset, software, music, artwork, and more.
 
-1b. No other restrictions are allowed to be listed and enforced other than the restrictions listed on this legal document, and authors of said digital work may lift or disable some restrictions at will.
+1b. No other restrictions are allowed to be listed and enforced other than the restrictions listed on this legal document or existing laws in most jurisdictions, and authors of said digital work may lift or disable some restrictions at will.
 
 1c. Violating this license may lead to civil or criminal charges to the fullest extent of the law.
 
