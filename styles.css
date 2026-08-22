@@ -19,6 +19,7 @@ body {
 }
 
 header {
+	position: sticky;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -48,6 +49,7 @@ main {
 	align-items: flex-start;
 	gap: 16px;
 	margin: 0 auto;
+	margin-top: 48px;
 	
 	font-family:sans-serif;
 	font-size: 12pt;
