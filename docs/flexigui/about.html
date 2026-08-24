@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cellulose3D Interactive - Documentation - About FlexiGUI</title>
+		<link rel="icon" type="image/png" href="https://wescomvallen.github.io/cellulose3d-interactive/media/Paper-GUI-Icon-512x.png">
+		<link rel="stylesheet" href="https://wescomvallen.github.io/cellulose3d-interactive/styles.css">
+	</head>
+	<body>
+		<header>
+			<a href="https://wescomvallen.github.io/cellulose3d-interactive/" style="height:24px"> <img src="https://wescomvallen.github.io/cellulose3d-interactive/media/cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=24px> </a>
+			
+			<a href="https://wescomvallen.github.io/cellulose3d-interactive/featured-software/home.html" class=pagehead-tabs>Software</a>
+			<a href="c3dinteractive.forumotion.asia" class=pagehead-tabs>Forums</a>
+			<a href="https://wescomvallen.github.io/cellulose3d-interactive/docs/home.html" class=pagehead-tabs>Documentation</a>
+			
+			<span style="height:16; flex-grow: 1"></span>
+			
+			<a href="https://scratch.mit.edu/studios/51462572/" class=pagehead-tabs>See our Scratch Studio!</a>
+		</header>
+		
+		<div style="display:flex; flex-direction:row; gap:16px; justify-content:center; margin-bottom: 24px; min-height: calc(100vh - 153px)">
+			<div class=panel-sidebar style="position:sticky; top:48px; min-width:128px; width:calc(95% - 1000px); max-width: 320px; max-height:calc(100vh - 64px);">
+				<summary class=topic-header>Table of contents</summary>
+				<nav class=panel-list style="margin:4px 0px; flex-grow:1; overflow-y:scroll; border-radius: 0;">
+					<ul style="margin-right:16px; display:flex; flex-direction:column; gap:8px;">
+							<li><a href="#about">			About FlexiGUI</a></li>
+							<li><a href="#features">		Feature set</a></li>
+							<li><a href="#updates">			Updates to FlexiGUI.</a></li>
+							<li><a href="#projects">		Projects using FlexiGUI</a></li>
+							<li><a href="#deprecation">		Deprecating FlexiGUI</a></li>
+					</ul>
+				</nav>
+				<a class=subtle-links href="https://wescomvallen.github.io/cellulose3d-interactive/docs/home.html">↩ Go back to Documentation Homepage</a>
+			</div>
+			
+			<main style="margin:0">
+				<h1 id=about class=topic-header>About FlexiGUI</h1>
+				
+				<p>FlexiGUI is a graphical user interface framework developed by Vallen Alexander to make adaptive graphical user interfaces in Scratch easier to make. The need to make such user interface framework stems from the tedious-ness of manually building a GUI in Scratch using sprites and costumes, and having code separated across multiple sprites.</p>
+				
+				<div style="display:flex; gap:8px;">
+					<img class=main-imageframe src="https://cdn2.scratch.mit.edu/get_image/project/1273313252_480x360.png" width=360px height=270px title="FlexiGUI 4's project thumbnail">
+					<img class=main-imageframe src="../../media/wmt-screenshot-0.png" width=360px height=270px title="Wireframe Modelling Tool 2, with the FlexiGUI 3.0 GUI engine.">
+				</div>
+				
+				<p>FlexiGUI was first used on the first version of Wireframe Modelling Tool, and Version 3.0 is used on the second version of Wireframe Modelling Tool, with a massive change in how the interface works, looks like, and how the modern user interface is made more intuitive to the user..</p>
+				
+				<div style="display:flex; gap:8px;">
+					<img class=main-imageframe src="../../media/wmt-screenshot-2.png" width=360px height=270px title="Wireframe Modelling Tool 1, with the original FlexiGUI 1.0 GUI engine.">
+					<img class=main-imageframe src="../../media/wmt-screenshot-1.png" width=360px height=270px title="Wireframe Modelling Tool 2, with the FlexiGUI 3.0 GUI engine.">
+				</div>
+				
+				<h2 id=features class=topic-header>Feature set</h2>
+				
+				<p>The latest version of FlexiGUI (Version 4) supports the following graphical user interface elements:</p>
+				
+				<ul>
+					<li>Text labels, with customizable colors using HSB values, center and right side align, multiple sizes, and text wrap.</li>
+					<li>Text buttons with two presets including normal (common buttons) and confirm (highlighted buttons that stand out), customizable colors, stroke color and thickness, hover color, tooltips, UI layer filtering (to disable everything except the currently focused subject of an interface, and more.</li>
+					<li>Image labels (stamped costumes) with customizeable effects and sizes that can be done with one single block instead of multiple blocks.)</li>
+					<li>Image buttons with the same features as an image label</li>
+					<li>Multiple forms of input, including dropdowns, sliders, and text fields.</li>
+					<li>On screen keyboard. for mobile accessibility.</li>
+					<li>Menu-and-layer system to select what menu to show and what subject is focused.</li>
+				</ul>
+				
+				<p>With these features, a developer can create complex graphical user interfaces that makes it easier to convey information to the user, and makes it intuitive for the user to navigate the software.</p>
+				
+				<h2 id=updates class=topic-header>Updates to FlexiGUI</h2>
+				
+				<p>Over time, FlexiGUI receives updates expanding functionality and fixing bugs in the framework.</p>
+				
+				<ul>
+					<li>FlexiGUI 2.0 adds custom colors to UI box elements, and an improved version with text markup was made for terminal interfaces.</li>
+					<li>FlexiGUI 3.0 is the first major overhaul adding an on-screen keyboard, vector text, and improved box renderer that runs faster than the older pre-3.0 scanline version.</li>
+					<li>FlexiGUI 4.0 is an addition to Version 3.0 which adds input elements, style presets, tooltips, and more.</li>
+				</ul>
+				
+				<h2 id=projects class=topic-header>Projects using FlexiGUI</h2>
+				
+				<p>These are the projects that use FlexiGUI in some way for a GUI.</p>
+				
+				<ul>
+					<li>Wireframe Modelling Tool by Vallen Alexander (aka Cellulose3D).</li>
+					<li>Advanced Photo Viewer by Vallen Alexander (aka Cellulose3D).</li>
+					<li>Portal 2 ending credits made in FlexiGUI, by Vallen Alexander (aka Cellulose3D).</li>
+					<li>wescomOS 5.0, by Vallen Alexander (aka Cellulose3D).</li>
+				</ul>
+				
+				<a class=subtle-links href="https://scratch.mit.edu/users/Cellulose3D">If you made a project using FlexiGUI and wanted it to be listed here, leave a comment in my user profile!</a>
+				
+				<h2 id=deprecation class=topic-header>Deprecating FlexiGUI.</h2>
+				
+				<p>We are currently developing a new and improved rewrite of the entire graphical user interface framework named the "Paper" GUI engine that adds more input elements, and a better, faster system that will outperform the old FlexiGUI 3.0 style in text rendering, box rendering, and more, using more elegant and readable code, and fixing visual artifacts due to flaws in FlexiGUI's rendering.</p>
+				<p>Currently, this version is still in unstable closed beta, and will take a lot more time to complete as a solo project made by Vallen Alexander. If you want to help, contact me in my email!</p>
+				
+			</main>
+		
+		</div>
+		
+		<footer>
+				<img style="margin-left: 16px;" src="https://wescomvallen.github.io/cellulose3d-interactive/media/cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=32px>
+				
+				<span style="border-left: 2px solid #ccc; height: 48px;"></span>
+				
+				<p style="color:#777;">
+					©2026 Vallen Alexander. All rights reserved. <br />
+					<a class=pagefoot-links href="https://scratch.mit.edu/studios/51462572/">Cellulose3D Interactive Studio</a> -
+					<a class=pagefoot-links href="https://scratch.mit.edu/users/Cellulose3D">Cellulose3D on Scratch</a> -
+					<a class=pagefoot-links href="mailto:vallenalexander2428@gmail.com">Contact email</a> -
+					<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/">Click here to go back to homepage</a>
+				</p>
+		</footer>
+		
+		<a href="#" class=input-button style="position:fixed; z-index:255; width:128px; bottom:8px; right:8px; box-shadow:0px 1px 4px rgba(0,0,0,0.25); text-decoration:none;">▲ Back to top</href>
+		
+	</body>
+</html>
