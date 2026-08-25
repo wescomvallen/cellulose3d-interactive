@@ -7,7 +7,9 @@ THIS SOFTWARE IS PROVIDED TO YOU "AS-IS" WITHOUT WARRANTY OF ANY KIND, UNLESS ST
 IN NO EVENT UNLESS REQUESTED BY APPLICABLE LAW OS STATED OTHERWISE IN WRITING BY THE COPYRIGHT HOLDER OF THIS SOFTWARE, OR ANY PARTIES WHO MODIFY THIS SOFTWARE IS LIABLE TO DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF MISUSE OR INABILITY TO OPERATE THIS SOFTWARE, INCLUDING BUT NOT LIMITED TO DATA LOSS, DAMAGE TO HARDWARE, OR ANY DAMAGES CAUSED BY SOFTWARE INCOMPATIBILITY WITH OTHER SOFTWARE, EVEN IF SUCH COPYRIGHT HOLDER OR PARTIES HAVE ADVISED POSSIBILITY OF SUCH DAMAGES.
 
 MODIFICATION OR ADAPTATION OF THIS SOFTWARE - You are free to modify this Software in the condition that you have given explicit attribution to the original copyright holders of the assets of such Software, unless stated otherwise in writing by the original copyright holders of this Software.
+
 VERBATIM DISTRIBUTION - You are not permitted to distribute verbatim copies of this Software without explicit permission from copyright holders of the Software, unless stated otherwise, and permitted distributions of this Software must give credit to the original copyright holders of the Software, and copyright notices in the Software remain intact if such notices exist.
+
 COMMERCIAL USE - You are not permitted to distribute verbatim or modified copies of this Software commercially unless stated otherwise by the copyright holders of this Software.
 
 THIS LICENSE DOES NOT GIVE PERMISSION TO LICENSE DERIVATIVE WORKS OF THIS SOFTWARE USING ANY OTHER LICENSE, UNLESS STATED OTHERWISE BY THE COPYRIGHT HOLDERS OF SUCH SOFTWARE.
