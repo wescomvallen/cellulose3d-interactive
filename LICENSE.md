@@ -10,6 +10,4 @@ MODIFICATION OR ADAPTATION OF THIS SOFTWARE - You are free to modify this Softwa
 
 VERBATIM DISTRIBUTION - You are not permitted to distribute verbatim copies of this Software without explicit permission from copyright holders of the Software, unless stated otherwise, and permitted distributions of this Software must give credit to the original copyright holders of the Software, and copyright notices in the Software remain intact if such notices exist.
 
-COMMERCIAL USE - You are not permitted to distribute verbatim or modified copies of this Software commercially unless stated otherwise by the copyright holders of this Software.
-
 THIS LICENSE DOES NOT GIVE PERMISSION TO LICENSE DERIVATIVE WORKS OF THIS SOFTWARE USING ANY OTHER LICENSE, UNLESS STATED OTHERWISE BY THE COPYRIGHT HOLDERS OF SUCH SOFTWARE.
