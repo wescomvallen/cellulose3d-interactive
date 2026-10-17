@@ -189,6 +189,35 @@ a { cursor: pointer; color: #556879; font-style: italic; transition: color 100ms
 a:hover {color: #3F8BD1; transition: color 100ms;}
 a:active {color: #28557F; transition: color 100ms;}
 
+h1 h2 h3 {
+	
+	box-sizing: border-box;
+	margin: 0;
+	
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 4px;
+	gap: 4px;
+	width: 100%;
+	
+	background: linear-gradient(90deg, #C8E5FF 0%, rgba(200, 229, 255, 0) 100%);
+	border-left: 4px solid #6AA0D2;
+	
+	/* Content text */
+	
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #3E74A6;
+	
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
 /* CSS for header art */
 
 .header-art {

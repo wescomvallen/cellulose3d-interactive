@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html style="scroll-padding-top:96px">
+	<head>
+		<title>Cellulose3D Interactive - Documentation - Home</title>
+		<link rel="icon" type="image/png" href="/cellulose3d-interactive/media/Paper-GUI-Icon-512x.png">
+		<link rel="stylesheet" href="https://wescomvallen.github.io/cellulose3d-interactive/styles.css">
+		
+		<style>
+			.blog-search {
+				
+				position: sticky;
+				top: 48px;
+				z-index:10;
+				
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 4px;
+				padding: 4px;
+				
+				width: 100%;
+				height: 24px;
+				
+				background: #F2F8FF;
+				border: 1px solid #98C8F6;
+				box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4), inset 0px 0px 0px 2px #FFFFFF;
+				border-radius: 8px;
+			}
+			
+			.post-list {
+				display:flex;
+				flex-direction: column;
+				margin: 0px;
+				gap: 16px;
+				width: 100%;
+				min-height: 1vh;
+			}
+			
+			.blog-post {
+	
+				box-sizing: border-box;
+				
+				background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFF 100%);
+				border: 1px solid #98C8F6;
+				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15), inset 0px 0px 0px 2px #FFFFFF;
+				border-radius: 8px;
+				
+				display:flex;
+				padding:12px;
+				gap:8px;
+				flex-direction:column;
+				
+				color: #556879;
+			}
+			
+			.post-header{
+				
+				box-sizing: border-box;
+				margin: 0;
+				
+				/* Auto layout */
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding: 4px;
+				gap: 4px;
+				width: 100%;
+				
+				background: linear-gradient(90deg, #C8E5FF 0%, rgba(200, 229, 255, 0) 100%);
+				border-left: 4px solid #6AA0D2;
+				
+				/* Content text */
+				
+				font-family: sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				color: #3E74A6;
+				
+				/* Inside auto layout */
+				flex: none;
+				order: 0;
+				flex-grow: 0;
+			}
+			
+			.blog-category{
+				
+				box-sizing: border-box;
+				margin: 0;
+				
+				/* Auto layout */
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding: 4px;
+				gap: 4px;
+				width: 100%;
+				
+				background: linear-gradient(90deg, #C8E5FF 0%, rgba(200, 229, 255, 0) 100%);
+				border-left: 4px solid #6AA0D2;
+				
+				/* Content text */
+				
+				font-family: sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				color: #3E74A6;
+				
+				/* Inside auto layout */
+				flex: none;
+				order: 0;
+				flex-grow: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="/cellulose3d-interactive/" style="height:24px"> <img src="/cellulose3d-interactive/media/cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=24px> </a>
+			
+			<a href="/cellulose3d-interactive/featured-software/home.html" class=pagehead-tabs>Software</a>
+			<a href="c3dinteractive.forumotion.asia" class=pagehead-tabs>Forums</a>
+			<a href="/cellulose3d-interactive/docs/home.html" class=pagehead-tabs>Documentation</a>
+			
+			<span style="height:16; flex-grow: 1"></span>
+			
+			<a href="https://scratch.mit.edu/studios/51462572/" class=pagehead-tabs>See our Scratch Studio!</a>
+		</header>
+		
+		<div style="display:flex; flex-direction:row; gap:16px; justify-content:center; margin-bottom: 24px;">
+			<div class=panel-sidebar style="position:sticky; top:48px; min-width:128px; width:calc(95% - 1000px); max-width: 320px; max-height:calc(100vh - 64px);">
+				<summary class=topic-header>Table of Contents</summary>
+				<nav class=panel-list style="margin:4px 0px; flex-grow:1; overflow-y:scroll; border-radius: 0;">
+					<ul style="margin-right:16px; display:flex; flex-direction:column; gap:8px;">
+							<li><a href="#category-important">Important News</a></li>
+							<li><a href="#category-flexigui">Updates to FlexiGUI</a></li>
+							<li><a href="#category-papergui">Updates to PaperGUI</a></li>
+							<li><a href="#category-wmt">Updates to Other Projects</a></li>
+							<li><a href="#category-personal">Personal</a></li>
+							<li><a href="#category-community">Community</a></li>
+							<li><a href="#category-submit">Submit an Article</a></li>
+					</ul>
+				</nav>
+				<a class=subtle-links href="/cellulose3d-interactive/index.html">↩ Go back to homepage</a>
+			</div>
+			
+			<main style="margin:0; min-height: 100vh">
+				
+				<div class=header-art style="background-image: url('https://wescomvallen.github.io/cellulose3d-interactive/media/header-art.svg');">
+					<div class=header-art-text>
+						<h1>Welcome to the Cellulose3D Interactive Documentation!</h3>
+						This page contains documentation for Cellulose3D Interactive's software.
+					</div>
+				</div>
+				
+				<h2 class=topic-header>Cellulose3D Interactive Web log</h2>
+				
+				<p style="text-align: justify;">This webpage is dedicated to document and communicate updates revolving personal stuff, community, and updates to Cellulose3D Software like WMT, FlexiGUI, PaperGUI, Quicksnap, and more.</p>
+				
+				<div class=blog-search>
+					<input type="text" style="flex-grow:1" id=blog-search class=input-text placeholder="🔎 Search blog posts by title or by content" autocomplete=off>
+				</div>
+				
+				<div class=post-list id=post-list>
+					<h2 class=blog-category data-category=important id=category-important>Important News     </h2>
+					
+					<article class=blog-post data-category=important data-title="Quicksnap will not be released on Scratch">
+						<h4 class=post-header>Quicksnap will not be released on Scratch<p style="text-align:right; flex-grow:1; font-weight:300; font-size:8pt; font-style:italic; color: #3E74A6;">by Vallen Alexander - 15 October 2026 at 10:07 a.m.</p></h3>
+						<p>
+						Due to past events of my creative work being distributed without permission,
+						and even used on personal attacks/harassment (Refer to the KDF_graphics
+						incident back in May 2026, Quicksnap and PaperGUI will NOT be released on
+						Scratch, and will instead be released on my website, using a license that restricts
+						archival, distribution, and commercial endeavor. Here is some screenshots and 
+						archives of the KDF_graphics incident, shown below. Referencing this incident
+						makes me feel uncomfortable, so please don't ask about it too much.
+						<br /><br />
+						What happened was, I banned him one day due to a conflict on features on WMT2
+						before its release in May 2026.  He began to call me names, calling my pinwheel
+						profile picture "rightextremist", Harassed me for my light themed UI (I have an
+						averagely bright monitor for my room and he has a monitor that is as bright as
+						the sun, so I can see the problem), Calls me "Anti-LUNX" which I have NEVER made
+						rules banning LUNX members, I sent my perspective of the issue, He mocks that
+						too, Calling it as "making yourself look like the victim and have the moral high-
+						ground" which I never said I was a victim in this conflict, All I did was trying to
+						protect my reputation. Then he stole my creative work as well, which I have tried
+						numerous times to take down using requets, I might have to do a "legal fight" if
+						this gets severe. Conclusion, He's incredibly childish for his age, and might have
+						some anger issues as well, regarding that this all happened because of a small
+						dispute.
+						<br /><br />
+						This forced me to make rules that ban this exact behavior.
+						Don't be like KDF. Be mature, and don't be annoying. If you do something wrong,
+						just own it, it's easier than throwing a tamper tantrum over and over. All that will
+						do is just waste your resources, AND make you feel depressed.
+						<br /><br />
+						P.S. Situations might have NOT been resolved yet!</p>
+						<div style="display:grid; place-items:center; gap:4px;">
+							<img src="important-1.png" style="max-height: 350px">
+							<br />
+							<img src="important-2.png" style="max-height: 350px">
+							<br />
+							<img src="important-3.png">
+						</div>
+					</article>
+					
+					<h2 class=blog-category id=category-flexigui  data-category=flexigui >Updates to FlexiGUI</h2>
+					
+					<article class=blog-post data-category=flexigui data-title="flexigui is discontinued">
+						<h4 class=post-header>FlexiGUI is discontinued<p style="text-align:right; flex-grow:1; font-weight:300; font-size:8pt; font-style:italic; color: #3E74A6;">by Vallen Alexander - 17 October 2026</p></h3>
+						FlexiGUI will no lonnger receive updates! These are the archives for the 4 updates happening in the course of two, or maybe three years.
+					</article>
+					
+					<h2 class=blog-category id=category-papergui  data-category=papergui >Updates to PaperGUI</h2>
+					
+					<article class=blog-post data-category=papergui data-title="about papergui">
+						<h4 class=post-header>About PaperGUI<p style="text-align:right; flex-grow:1; font-weight:300; font-size:8pt; font-style:italic; color: #3E74A6;">by Vallen Alexander - 17 October 2026</p></h3>
+						PaperGUI is a graphical user interface (GUI) framework made in Scratch designed to make dynamic UI easier for developers, and more intuitive towards the user. PaperGUI includes a set of features already built in to speed up project development, while also allowing for more types of UI elements to be used on a project.
+					</article>
+					
+					<h2 class=blog-category id=category-wmt       data-category=wmt      >Updates to WMT     </h2>
+					
+					<h2 class=blog-category id=category-personal  data-category=personal>Personal Blogs     </h2>
+					
+					<article class=blog-post data-category=personal data-title="Wow, you really gotta do that, huh?">
+						<h4 class=post-header>Wow, you really gotta do that, huh?<p style="text-align:right; flex-grow:1; font-weight:300; font-size:8pt; font-style:italic; color: #3E74A6;">by Vallen Alexander - 17 October 2026</p></h3>
+						You really need to mock me like that, huh, KDF?? At this point I'm not surprised if you get banned off the platform!
+						<div style="display:grid; place-items:center; gap:4px;">
+							<img src="personal-1.png" style="max-height: 350px">
+						</div>
+					</article>
+					
+					<article class=blog-post data-category=personal data-title="new website">
+						<h4 class=post-header>New Website<p style="text-align:right; flex-grow:1; font-weight:300; font-size:8pt; font-style:italic; color: #3E74A6;">by Vallen Alexander - 17 October 2026</p></h3>
+						I just made this website! How does it look?
+						<br /> If you have a suggestion, send it through email!
+					</article>
+					
+					
+					<h2 class=blog-category id=category-community data-category=community>Community          </h2>
+					
+					<article class=blog-post data-category=community data-title="about community posts" id=category-submit>
+						<h4 class=post-header>About Community Posts<p style="text-align:right; flex-grow:1; font-weight:300; font-size:8pt; font-style:italic; color: #3E74A6;">by Vallen Alexander - 17 October 2026</p></h3>
+						<b>Some community blog posts may feature topics that can make some people feel uncomfortable. Viewer discretion is advised.</b>
+						<p>Community blog posts are made by people on the Cellulose3D Interactive Community, usually featuring community made tools, fan artwork, and more!	</p>
+						
+						<h5 class=topic-header>Posting Community Weblog Articles</h5>
+						
+						<p>To add an article to Cellulose3D Interactive's web log, you can request to add it by sending an email to my contact address <a href="mailto:vallenalexander2428@gmail.com">here.</a></p>
+				
+						<p>Just send the article document in clear and readable .doc or .pdf, maybe even a .txt file, and some pictures if you want. Your article should be up in just one week.</p>
+						
+						<b>Note that you can only post one blog post per week.</b>
+						
+						<h5 class=topic-header>Rules on posting articles</h5>
+						Here are the rules on posting community articles.
+						<ol style="text-align: justify; margin-right:32px;">
+							<li>Articles can not include inflammatory content targeted towards an individual, group, religion, ethnics, race, or individual with disabilities.</li>
+							<li>Articles can not include or refer to political topics regarding political events.</li>
+							<li>Articles can not include controversial topics.</li>
+							<li>Articles can not promote illegal activities.</li>
+							<li>Articles can not contain Not Safe For Work (NSFW) content.</li>
+							<li>Articles must limit profanity as much as possible.</li>
+							<li>Articles can not include photos of people without permission from those people.</li>
+							<li>Authors must have permission for including any and all intellectual property in their articles, even if those articles comply with Fair Use laws.</li>
+							<li>Articles can not contain sensitive personal information, including (but not limited to) e-mail addresses, phone numbers, house addresses, postal code, Internet Protocol (IP) addresses, biometric data, etc.</li>
+							<li>Articles can not include references to the LUNX.cast team, <a href="https://scratch.mit.edu/users/kdf_graphics">KDF_graphics</a>, and any drama about those groups of people.</li>
+							<li>These rules are made for compliance with Indonesian law on Information and Electronic Transactions (UU ITE) and Ministerial Regulation No. 5/2020 (Permen Kominfo No. 5/2020 / Komdigi guidelines). Duplicate rules from the above are not listed.</li>
+							<ol>
+								<li>Articles can not promote, facilitate, include links to, or reviewing online gambling, or any random chance activities.</li>
+								<li>Articles can not include content deliberately made to maliciously defame Cellulose3D, any group of people, religion, ethnics, race, or individual.</li>
+								<li>Articles can not spread misinformation designed to cause public unrest, or dangerous fake medical information.</li>
+								<li>Articles are prohibited from including unlicensed financial schemes (illegal pinjol / illegal lending, crypto scams).</li>
+								<li>Articles are prohibited facilitating sale of illegal firearms, explosives, or illegal wildlife trade.</li>
+								<li>Articles are prohibited from including content promoting terrorist organizations, violent extremism, separatism, or radical propaganda aimed at destabilizing national security.</li>
+							</ol>
+						</ol>
+						<p>Articles violating there rules will not be uploaded to our web log, and existing articles violating these rules will be removed. <br /> If an article exists violating these rules, please email <a href="mailto:vallenalexander2428@gmail.com">vallenalexander2428@gmail.com</a> to request removal.</p>
+					</article>
+				</div>
+				
+				<div id=no-results style="width:100%;"
+					<p style="font-style:italic">Search query returned no results</p>
+				</div>
+				
+			</main>
+		
+		</div>
+		
+		<footer>
+				<img style="margin-left: 16px;" src="/cellulose3d-interactive/media/cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=32px>
+				
+				<span style="border-left: 2px solid #ccc; height: 48px;"></span>
+				
+				<p style="color:#777;">
+					©2026 Vallen Alexander. All rights reserved. <br />
+					<a class=pagefoot-links href="https://scratch.mit.edu/studios/51462572/">Cellulose3D Interactive Studio</a> -
+					<a class=pagefoot-links href="https://scratch.mit.edu/users/Cellulose3D">Cellulose3D on Scratch</a> -
+					<a class=pagefoot-links href="mailto:vallenalexander2428@gmail.com">Contact email</a> -
+					<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/">Click here to go back to homepage</a>
+				</p>
+		</footer>
+		
+		<a href="#" class=input-button style="position:fixed; z-index:255; width:128px; bottom:8px; right:8px; box-shadow:0px 1px 4px rgba(0,0,0,0.25); text-decoration:none;">▲ Back to top</href>
+		
+		<script>
+		const searchInput = document.getElementById('blog-search');
+        const postCards = document.querySelectorAll('.blog-post');
+		const categoryHeaders = document.querySelectorAll('.blog-category');
+        const noResultsEl = document.getElementById('no-results');
+		noResultsEl.style.display = 'none'
+
+        function filterPosts() {
+            const query = searchInput.value.toLowerCase().trim();
+			categories = ['any'];
+            let visibleCount = 0;
+
+            postCards.forEach(card => {
+				const title = card.getAttribute('data-title');
+				const content = card.textContent.toLowerCase();
+				const category = card.getAttribute('data-category');
+
+				const matchesSearch = (title.includes(query) || content.includes(query));
+	
+				if (matchesSearch) {
+					categories.push(category);
+					card.style.display = 'flex';
+					visibleCount++;
+				} else {
+					card.style.display = 'none';
+				}
+			});
+			if (visibleCount === 0) {
+				noResultsEl.style.display = 'block';
+			} else if (query !== 0) {
+				noResultsEl.style.display = 'none';
+			}
+			
+			categoryHeaders.forEach(header => {
+				if (categories.includes(header.dataset.category) || query === '') {
+					header.style.display = 'block';
+				} else {
+					header.style.display = 'none';
+				};
+			});
+		}
+	
+			// Event listener for typing in search bar
+			searchInput.addEventListener('input', filterPosts);
+	
+		</script>
+		
+	</body>
+</html>
