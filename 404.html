@@ -4,6 +4,62 @@
 		<title>Cellulose3D Interactive - Page Not Found</title>
 		<link rel="icon" type="image/png" href="https://wescomvallen.github.io/cellulose3d-interactive/media/Paper-GUI-Icon-512x.png">
 		<link rel="stylesheet" href="https://wescomvallen.github.io/cellulose3d-interactive/styles.css">
+		
+		<style>
+			.pop-up-dialog {
+				
+				margin: 4px;
+				
+				background: #F2F8FF;
+				border: 1px solid #98C8F6;
+				box-shadow: inset 0px 0px 0px 2px #FFFFFF;
+				border-radius: 8px;
+				
+				width:50%;
+				left:25%;
+				top:50%;
+				margin:auto;
+				position:fixed;
+				visibility:hidden;
+				
+				display:flex;
+				padding:8px;
+				flex-direction:column;
+				gap:8px;
+				box-shadow:0px 0px 8px 0px rgba(0,0,0,0.5);
+				
+				transform: translateY(-125vh);
+				transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55), visibility 0.25s linear;
+			}
+			.pop-up-dialog.active {
+				visibility:visible;
+				transform: translateY(-50%);
+				z-index:50;
+				transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55), visibility 0.25s linear;
+			}
+			.pop-up-dialog-backdrop {
+				width:100vw;
+				height:100vh;
+				left: 0;
+				bottom:0;
+				position:fixed;
+				background-color: rgba(0, 0, 0, 0.5);
+				backdrop-filter: blur(3px);
+				justify-items:center;
+				align-items:center;
+				display:flex;
+				opacity: 0%;
+				z-index:260;
+				visibility: hidden;
+				transition: opacity 0.3s linear, visibility 0.5s linear;
+			}
+			.pop-up-dialog-backdrop.active {
+				opacity: 100%;
+				visibility:visible;
+				transition: opacity 0.5s linear, visibility 0.5s linear;
+			}			
+		</style>
+		
 	</head>
 	<body>
 		<header>
@@ -22,8 +78,14 @@
 				</div>
 			</div>
 			<h2 class=topic-header>Send Feedback</h2>
-			<p>You can send an email if a broken link in my website leads you to this page</p>
-			<div id=report-broken-pages class=panel-list style="width:50%; margin-left:auto; margin-right:auto; display:flex; padding:8px; flex-direction:column; gap:4px; box-shadow:0px 0px 8px 0px rgba(0,0,0,0.5)">
+			<p>You can send an email if a broken link in my website leads you to this page. <a id="call-popup-dialog">↪Report broken pages</a></p>
+		</main>
+		
+		<div id=dialog-backdrop class=pop-up-dialog-backdrop>
+			<div id=report-broken-pages class=pop-up-dialog>
+				<a id="close-popup-dialog" style="font-size: 10pt;">↪ Close this popup</a>
+				<h2 class=topic-header>Report Broken Pages</h3>
+				<span style="width:100%; height:2px; border-radius:1px; background-color:#6aa0d2;"></span>
 				<input class=input-text type=hidden placeholder="Subject" value="Report broken links at wescomvallen.github.io/cellulose3d-interactive" required>
 				<p style="font-size:10pt">What webpage lead you here?</p>
 				<input class=input-text type=text placeholder="Referrer URL" id=ref-url value="" required>
@@ -33,7 +95,8 @@
 				<textarea class=input-text placeholder="Additional details" id=added-info style="resize:vertical; min-height:250px"></textarea>
 				<button class=input-button style="width:100%" id=submit >Create report email</button>
 			</div>
-		</main>
+		</div>
+		
 		<footer>
 				<img style="margin-left: 16px;" src="https://wescomvallen.github.io/cellulose3d-interactive/media/cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=32px>
 				
@@ -50,6 +113,9 @@
 		</footer>
 		
 		<script>
+		
+			const dialog = document.getElementById("report-broken-pages");
+			const overlay = document.getElementById("dialog-backdrop");
 			const missingUrl = window.location.href;
 			const referrerUrl = document.referrer || "Direct visit or typed URL";
 			console.log(missingUrl);
@@ -60,6 +126,16 @@
 			input_ref.value = referrerUrl;
 			let input_add = document.getElementById("added-info");
 			let additionalInfo = "temp";
+			
+			document.getElementById('call-popup-dialog').addEventListener("click", function(){
+				dialog.classList.add('active');
+				overlay.classList.add('active');
+			});
+			
+			document.getElementById('close-popup-dialog').addEventListener("click", async function(){
+				dialog.classList.remove('active');
+				overlay.classList.remove('active');
+			});
 			
 			document.getElementById("submit").addEventListener("click", function() {
 				if (input_add.value ==='') {
