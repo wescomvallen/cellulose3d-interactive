@@ -3,7 +3,7 @@
 	<head>
 		<title>Cellulose3D Interactive - Page Not Found</title>
 		<link rel="icon" type="image/png" href="https://wescomvallen.github.io/cellulose3d-interactive/media/Paper-GUI-Icon-512x.png">
-		<link rel="stylesheet" href="https://wescomvallen.github.io/cellulose3d-interactive/styles.css">
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<header>
@@ -13,15 +13,26 @@
 			
 			<a href="https://scratch.mit.edu/studios/51462572/" class=pagehead-tabs>See our Scratch Studio!</a>
 		</header>
-		<main>
+		<main style="flex-grow:0; min-height:100vh">
 			<div class=header-art style="background-image: url('https://wescomvallen.github.io/cellulose3d-interactive/media/header-art.svg');">
 				<div class=header-art-text>
-					<h1>This is not the page you're looking for!</h3>
+					<h1>This is not the page you're looking for!</h1>
 					It might have been renamed, moved elsewhere, or deleted entirely.
 					<a class=subtle-links style="font-weight:normal; font-size:12pt;" href="https://wescomvallen.github.io/cellulose3d-interactive/">↩ Go back to homepage</a>
 				</div>
 			</div>
-
+			<h2 class=topic-header>Send Feedback</h2>
+			<p>You can send an email if a broken link in my website leads you to this page</p>
+			<div id=report-broken-pages class=panel-list style="width:50%; margin-left:auto; margin-right:auto; display:flex; padding:8px; flex-direction:column; gap:4px; box-shadow:0px 0px 8px 0px rgba(0,0,0,0.5)">
+				<input class=input-text type=hidden placeholder="Subject" value="Report broken links at wescomvallen.github.io/cellulose3d-interactive" required>
+				<p style="font-size:10pt">What webpage lead you here?</p>
+				<input class=input-text type=text placeholder="Referrer URL" id=ref-url value="" required>
+				<p style="font-size:10pt">What link was broken?</p>
+				<input class=input-text type=text placeholder="Missing URL" id=mis-url value="" required>
+				<p style="font-size:10pt">Additional details</p>
+				<textarea class=input-text placeholder="Additional details" id=added-info style="resize:vertical; min-height:250px"></textarea>
+				<button class=input-button style="width:100%" id=submit >Create report email</button>
+			</div>
 		</main>
 		<footer>
 				<img style="margin-left: 16px;" src="https://wescomvallen.github.io/cellulose3d-interactive/media/cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=32px>
@@ -32,8 +43,36 @@
 				©2026 Vallen Alexander. All rights reserved.<br />
 				<a class=pagefoot-links href="https://scratch.mit.edu/studios/51462572/">Cellulose3D Interactive Studio</a> -
 				<a class=pagefoot-links href="https://scratch.mit.edu/users/Cellulose3D">Cellulose3D Scratch Profile</a> -
+				<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/docs/formal-report.html">Report an issue</a> -
+				<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/docs/content-code.html">Content Code</a> -
 				<a class=pagefoot-links href="mailto:vallenalexander2428@gmail.com">Contact email</a>
 				</p>
 		</footer>
+		
+		<script>
+			const missingUrl = window.location.href;
+			const referrerUrl = document.referrer || "Direct visit or typed URL";
+			console.log(missingUrl);
+			console.log(referrerUrl);
+			let input_mis = document.getElementById("mis-url");
+			input_mis.value = missingUrl;
+			let input_ref = document.getElementById("ref-url");
+			input_ref.value = referrerUrl;
+			let input_add = document.getElementById("added-info");
+			let additionalInfo = "temp";
+			
+			document.getElementById("submit").addEventListener("click", function() {
+				if (input_add.value ==='') {
+					additionalInfo = "null"
+				} else {
+					additionalInfo = input_add.value
+				}
+				let construct_link = "mailto:vallenalexander2428@gmail.com?subject=Report%20broken%20links%20at%20wescomvallen.github.io%2Fcellulose3d-interactive&body=User-Generated%20Report%3A%20A%20user%20sent%20a%20report%20with%20the%20following%20information%3A%0AMissing%20URL%3A%20" + encodeURIComponent(input_mis.value) + "%0AReferrer%20URL%3A%20" + encodeURIComponent(input_ref.value) + "%0AAdditional%20information%3A%20" + encodeURIComponent(additionalInfo);
+				console.log(construct_link);
+				window.location.href = construct_link;
+			});
+			
+		</script>
+		
 	</body>
 </html>
