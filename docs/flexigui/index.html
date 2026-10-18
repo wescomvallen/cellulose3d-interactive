@@ -86,6 +86,71 @@
 				<p>We are currently developing a new and improved rewrite of the entire graphical user interface framework named the "Paper" GUI engine that adds more input elements, and a better, faster system that will outperform the old FlexiGUI 3.0 style in text rendering, box rendering, and more, using more elegant and readable code, and fixing visual artifacts due to flaws in FlexiGUI's rendering.</p>
 				<p>Currently, this version is still in unstable closed beta, and will take a lot more time to complete as a solo project made by Vallen Alexander. If you want to help, contact me in my email!</p>
 				
+				<h1 id=flexigui-1.0-elements class=topic-header>FlexiGUI Menu Tabs and Layers system</h1>
+
+				<p class="main-text">FlexiGUI features two variables for controlling what UI element is active.</p>
+
+				<p class="main-text">The <b>MenuTab</b> variable can be used to control what "menu" is displayed, by grouping different menu elements inside if blocks.</p>
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px" title="FlexiGUI 4.0 menu elements grouped inside an if block.">
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px" title="Different UI screens in FlexiGUI 4.0 show up depending on what MenuTab selects">
+
+				<p class="main-text">The <b>MenuLayer</b> variable can be used to control what UI elements are active, which can be useful for multi-layered GUIs.</p>
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px" title="Two different UI elements in FlexiGUI 4.0, assigned to different layers.">
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px" title="Only one of the two UI elements are active at a time.">
+
+				<h1 id="flexigui-1.0-elements" class=topic-header>FlexiGUI 1.0 User Interface Elements</h1>
+
+				<h2 id="flexigui-1.0-uie-line" class="topic-header">Line <a style="margin-left:auto; font-weight:normal; font-size:10pt;" id="copy-anchor" data-section="flexigui-1.0-uie-line">Copy link</a></h2>
+
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px">
+
+				<p>Draws a straight line on the screen, from point A to point B.</p>
+				
+				<h3 class="topic-header">Parameters</h3>
+
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:100px">
+
+				<ul>
+					<li><b>x1, y1</b> Define point A's X and Y positions.</li>
+					<li><b>x2, y2</b> Define point B's X and Y positions.</li>
+					<li><b>thicc</b> Define the thickness of the drawn line.</li>
+					<li><b>color</b> Define the color of the drawn line, written in hexadecimal RGB (like RRGGBB, not #RRGGBB nor 0xRRGGBB)</li>
+				</ul>
+
+				<h2 id="flexigui-1.0-uie-filled-box" class="topic-header">Filled box <a style="margin-left:auto; font-weight:normal; font-size:10pt;" id="copy-anchor" data-section="flexigui-1.0-uie-filled-box">Copy link</a></h2>
+
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px">
+
+				<p>Draws a filled box on the screen, using a scanline function.</p>
+				
+				<h3 class="topic-header">Parameters</h3>
+
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:100px">
+
+				<ul>
+					<li><b>x, y</b> Define the top-left corner position of the box.</li>
+					<li><b>w, h</b> Define the width and height of the box.</li>
+					<li><b>color</b> Define the color of the box, written in hexadecimal RGB (like RRGGBB, not #RRGGBB nor 0xRRGGBB)</li>
+					<li><b>res</b> Define how big the scanline should be. Less scanlines allow more performance and more scanlines are more precise.</li>
+				</ul>
+
+				<h2 id="flexigui-1.0-uie-print" class="topic-header">Print <a style="margin-left:auto; font-weight:normal; font-size:10pt;" id="copy-anchor" data-section="flexigui-1.0-uie-print">Copy link</a></h2>
+
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px">
+
+				<p>Draws text on the screen.</p>
+
+				<h3 class="topic-header">Parameters</h3>
+
+				<img src="/cellulose3d-interactive/media/placeholder-thumbnail.png" class=main-imageframe style="height:100px">
+
+				<ul>
+					<li><b>str</b> Define what the function will write on screen.</li>
+					<li><b>x, y</b> Define where the text will be drawn, acting as the top-left point of the text. If &lt;centered?&gt; is true, <b>this will be the top-middle point of the text.</b></li>
+					<li><b> &lt;centered?&gt; </b> Define if the text should be centered. If set to false, the text will be drawn from x and y, towards the right.</li>
+					<li><b>h, s, v,</b> Define the color of the text in HSB* format.</li>
+				</ul>
+
 			</main>
 		
 		</div>
