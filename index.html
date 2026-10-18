@@ -6,18 +6,7 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<header>
-			<a href="https://wescomvallen.github.io/cellulose3d-interactive/" style="height:24px"> <img src="media\cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=24px> </a>
-			
-			<a href="software/home.html" class=pagehead-tabs>Software</a>
-			<a href="https://c3dinteractive.forumotion.asia/" class=pagehead-tabs>Forums</a>
-			<a href="docs/home.html" class=pagehead-tabs>Documentation</a>
-			<a href="https://scratch.mit.edu/users/Cellulose3D" class=pagehead-tabs>Cellulose3D on Scratch</a>
-			
-			<span style="height:16; flex-grow: 1"></span>
-			
-			<a href="https://scratch.mit.edu/studios/51462572/" class=pagehead-tabs>See our Scratch Studio!</a>
-		</header>
+		{% include header.html %}
 		<main>
 			<div class=header-art style="background-image: url('media/header-art.svg');">
 				<div class=header-art-text>
@@ -103,19 +92,6 @@
 			</div>
 			
 		</main>
-		<footer>
-				<img style="margin-left: 16px;" src="media\cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=32px>
-				
-				<span style="border-left: 2px solid #ccc; height: 48px;"></span>
-				
-				<p>
-				©2026 Vallen Alexander. All rights reserved.<br />
-				<a class=pagefoot-links href="https://scratch.mit.edu/studios/51462572/">Cellulose3D Interactive Studio</a> -
-				<a class=pagefoot-links href="https://scratch.mit.edu/users/Cellulose3D">Cellulose3D Scratch Profile</a> -
-				<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/docs/formal-report.html">Report an issue</a> -
-				<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/docs/content-code.html">Content Code</a> -
-				<a class=pagefoot-links href="mailto:vallenalexander2428@gmail.com">Contact email</a>
-				</p>
-		</footer>
+		{% include footer.html %}
 	</body>
 </html>

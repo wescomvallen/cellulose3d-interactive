@@ -6,17 +6,7 @@
 		<link rel="stylesheet" href="https://wescomvallen.github.io/cellulose3d-interactive/styles.css">
 	</head>
 	<body>
-		<header>
-			<a href="/cellulose3d-interactive/" style="height:24px"> <img src="/cellulose3d-interactive/media/cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=24px> </a>
-			
-			<a href="/cellulose3d-interactive/featured-software/home.html" class=pagehead-tabs>Software</a>
-			<a href="c3dinteractive.forumotion.asia" class=pagehead-tabs>Forums</a>
-			<a href="/cellulose3d-interactive/docs/home.html" class=pagehead-tabs>Documentation</a>
-			
-			<span style="height:16; flex-grow: 1"></span>
-			
-			<a href="https://scratch.mit.edu/studios/51462572/" class=pagehead-tabs>See our Scratch Studio!</a>
-		</header>
+		{% include header.html %}
 		
 		<div style="display:flex; flex-direction:row; gap:16px; justify-content:center; margin-bottom: 24px;">
 			<div class=panel-sidebar style="position:sticky; top:48px; min-width:128px; width:calc(95% - 1000px); max-width: 320px; max-height:calc(100vh - 64px);">
@@ -83,21 +73,7 @@
 		
 		</div>
 		
-		<footer>
-				<img style="margin-left: 16px;" src="/cellulose3d-interactive/media/cellulose3d-typemark-transparent.png" alt="Cellulose3D Logo" height=32px>
-				
-				<span style="border-left: 2px solid #ccc; height: 48px;"></span>
-				
-				<p style="color:#777;">
-					©2026 Vallen Alexander. All rights reserved. <br />
-					<a class=pagefoot-links href="https://scratch.mit.edu/studios/51462572/">Cellulose3D Interactive Studio</a> -
-					<a class=pagefoot-links href="https://scratch.mit.edu/users/Cellulose3D">Cellulose3D on Scratch</a> -
-					<a class=pagefoot-links href="mailto:vallenalexander2428@gmail.com">Contact email</a> -
-					<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/docs/formal-report.html">Report an issue</a> -
-					<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/docs/content-code.html">Content Code</a> -
-					<a class=pagefoot-links href="https://wescomvallen.github.io/cellulose3d-interactive/">Click here to go back to homepage</a>
-				</p>
-		</footer>
+		{% include footer.html %}
 		
 		<a href="#" class=input-button style="position:fixed; z-index:255; width:128px; bottom:8px; right:8px; box-shadow:0px 1px 4px rgba(0,0,0,0.25); text-decoration:none;">▲ Back to top</href>
 		
