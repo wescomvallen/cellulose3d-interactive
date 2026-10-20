@@ -1,0 +1,52 @@
+---
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cellulose3D Interactive - About Me</title>
+		<link rel="icon" type="image/png" href="/media/Paper-GUI-Icon-512x.png">
+		<link rel="stylesheet" href="/styles.css">
+	</head>
+	<body>
+		{% include header.html %}
+		<main>
+			<div class=header-art style="background-image: url('/media/header-art.svg');">
+				<div class=header-art-text>
+					<h1>Welcome to my portfolio!</h1>
+					This page features the software I make, and what are my experience in programming so far.
+				</div>
+			</div>
+			
+			<p class=main-text>I make games worth playing, and technically impressive software that may or may not help you make 3D projects easier in Scratch.</p>
+			
+			<h2 class=topic-header >Featured Software</h2>
+			<div style="margin:8px 32px; display:flex; gap:24px; flex-direction:column">
+				<div style="width:100%; display:flex; flex-direction:row; gap:8px;">
+					<img class=main-imageframe src="https://cdn2.scratch.mit.edu/get_image/project/1321947108_480x360.png" width=360px height=270px>
+					<div style="flex-grow:1; display:flex; flex-direction:column; gap:8px">
+						<h2 style="color:#28557F; width:100%; margin:0px;">Wireframe Modelling Tool</h2>
+						<p style="flex-grow:1; margin:0px 16px;">Wireframe Modelling Tool is a 3D modelling software by Vallen Alexander that allows you to create primitive 3D models with ease. Featuring plugin support, multiple models & objects, and a user interface powered by FlexiGUI 3.0, this software allows you to create the best 3D model you can imagine.</p>
+						<div style="display:flex; gap:8px">
+							<a href="https://scratch.mit.edu/projects/1321947108/" class=input-button style="min-height:32px; padding:8px 16px;">Get Wireframe Modelling Tool in Scratch!</a>
+							<a href="docs/home.html" class=input-button style="min-height:32px; padding:8px 16px;">Read the WMT2 documentation</a>
+						</div>
+					</div>
+				</div>
+				
+				<div style="width:100%; display:flex; flex-direction:row; gap:8px;">
+					<img class=main-imageframe src="https://cdn2.scratch.mit.edu/get_image/project/1273313252_480x360.png" width=360px height=270px>
+					<div style="flex-grow:1; display:flex; flex-direction:column; gap:8px">
+						<h2 style="color:#28557F; width:100%; margin:0px;">FlexiGUI</h2>
+						<p style="flex-grow:1; margin:0px 16px;">FlexiGUI is a user interface engine by Vallen Alexander that lets you build competent, multiple-menu graphical user interfaces easily using code.</p>
+						<div style="display:flex; gap:8px">
+							<a href="https://scratch.mit.edu/studios/51450805/" class=input-button style="min-height:32px; padding:8px 16px;">Get the latest version in Scratch!</a>
+							<a href="docs/home.html" class=input-button style="min-height:32px; padding:8px 16px;">Read FlexiGUI's documentation</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+		{% include footer.html %}
+	</body>
+</html>
