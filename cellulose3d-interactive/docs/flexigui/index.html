@@ -15,11 +15,48 @@
 				<summary class=topic-header>Table of contents</summary>
 				<nav class=panel-list style="margin:4px 0px; flex-grow:1; overflow-y:scroll; border-radius: 0;">
 					<ul style="margin-right:16px; display:flex; flex-direction:column; gap:8px;">
-							<li><a href="#about">			About FlexiGUI</a></li>
-							<li><a href="#features">		Feature set</a></li>
-							<li><a href="#updates">			Updates to FlexiGUI.</a></li>
-							<li><a href="#projects">		Projects using FlexiGUI</a></li>
-							<li><a href="#deprecation">		Deprecating FlexiGUI</a></li>
+							<li><a href="#about">							About FlexiGUI</a></li>
+							<li><a href="#features">						Feature set</a></li>
+							<li><a href="#updates">							Updates to FlexiGUI.</a></li>
+							<li><a href="#projects">						Projects using FlexiGUI</a></li>
+							<li><a href="#deprecation">						Deprecating FlexiGUI</a></li>
+							<li><a href="#flexigui-tabs-and-layers">		FlexiGUI Menu Tabs and Layers system</a></li>
+							<li><a href="#flexigui-1.0-elements">			FlexiGUI 1 Elements</a></li>
+							<ul>
+								<li><a href="#flexigui-1-uie-line">Line</a></li>
+								<li><a href="#flexigui-1-uie-filled-box">Filled Box</a></li>
+								<li><a href="#flexigui-1-uie-print">Print</a></li>
+								<li><a href="#flexigui-1-uie-button">Button</a></li>
+								<li><a href="#flexigui-1-uie-window">Window</a></li>
+								<li><a href="#flexigui-1-uie-print-log">Print Log</a></li>
+							</ul>
+							<li><a href="#flexigui-2.0-elements">			FlexiGUI 2 Elements</a></li>
+							<ul>
+								<li><a href="#flexigui-2-uie-line">Line</a></li>
+								<li><a href="#flexigui-2-uie-filled-box">Filled Box</a></li>
+								<li><a href="#flexigui-2-uie-print">Print</a></li>
+								<li><a href="#flexigui-2-uie-button">Button</a></li>
+								<li><a href="#flexigui-2-uie-window">Window</a></li>
+								<li><a href="#flexigui-2-uie-print-log">Print Log</a></li>
+							</ul>
+							<li><a href="#flexigui-3.0-elements">			FlexiGUI 3 Elements</a></li>
+							<ul>
+								<li><a href="#flexigui-3-uie-line">Line</a></li>
+								<li><a href="#flexigui-3-uie-filled-box">Filled Box</a></li>
+								<li><a href="#flexigui-3-uie-print">Print</a></li>
+								<li><a href="#flexigui-3-uie-button">Button</a></li>
+								<li><a href="#flexigui-3-uie-window">Window</a></li>
+								<li><a href="#flexigui-3-uie-print-log">Print Log</a></li>
+							</ul>
+							<li><a href="#flexigui-4.0-elements">			FlexiGUI 4 Elements</a></li>
+							<ul>
+								<li><a href="#flexigui-4-uie-line">Line</a></li>
+								<li><a href="#flexigui-4-uie-filled-box">Filled Box</a></li>
+								<li><a href="#flexigui-4-uie-print">Print</a></li>
+								<li><a href="#flexigui-4-uie-button">Button</a></li>
+								<li><a href="#flexigui-4-uie-window">Window</a></li>
+								<li><a href="#flexigui-4-uie-print-log">Print Log</a></li>
+							</ul>
 					</ul>
 				</nav>
 				<a class=subtle-links href="/cellulose3d-interactive/docs/">↩ Go back to Documentation Homepage</a>
@@ -86,7 +123,7 @@
 				<p>We are currently developing a new and improved rewrite of the entire graphical user interface framework named the "Paper" GUI engine that adds more input elements, and a better, faster system that will outperform the old FlexiGUI 3.0 style in text rendering, box rendering, and more, using more elegant and readable code, and fixing visual artifacts due to flaws in FlexiGUI's rendering.</p>
 				<p>Currently, this version is still in unstable closed beta, and will take a lot more time to complete as a solo project made by Vallen Alexander. If you want to help, contact me in my email!</p>
 				
-				<h1 id=flexigui-1.0-elements class=topic-header>FlexiGUI Menu Tabs and Layers system</h1>
+				<h1 id=flexigui-tabs-and-layers class=topic-header>FlexiGUI Menu Tabs and Layers system</h1>
 
 				<p class="main-text">FlexiGUI features two variables for controlling what UI element is active.</p>
 
@@ -159,6 +196,64 @@
 					<li><b>h, s, v,</b> Define the color of the text in HSB* format.</li>
 				</ul>
 
+				<!-- FlexiGUI 1.0 Element - Button -->
+
+				<h2 id="flexigui-1.0-uie-button" class="topic-header">Button<a style="margin-left:auto; font-weight:normal; font-size:10pt;" id="copy-anchor" data-section="flexigui-1.0-uie-button">Copy link</a></h2>
+
+				<img src="/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px">
+
+				<p>Draws a clickable button that sends a broadcast message when clicked.</p>
+				
+				<h3 class="topic-header">Parameters</h3>
+
+				<img src="/media/placeholder-thumbnail.png" class=main-imageframe style="height:100px">
+
+				<ul>
+					<li><b>x, y</b> Define the top-left corner position of the button.</li>
+					<li><b>w, h</b> Define the width and height of the button.</li>
+					<li><b>color</b> Define the color of the button, written in hexadecimal RGB (like RRGGBB, not #RRGGBB nor 0xRRGGBB)</li>
+					<li><b>txt</b> Define how big the scanline should be. Less scanlines allow more performance and more scanlines are more precise.</li>
+					<li><b>layer</b> Define what value should MenuLayer be to allow the button to send broadcasts. If this does not match MenuLayer, the button will be disabled and rendered with a grey color.</li>
+					<li><b>broadcast</b> Define what message should the button broadcast for the entire duration it is clicked.</li>
+				</ul>
+
+				<!-- FlexiGUI 1.0 Element - Window -->
+
+				<h2 id="flexigui-1.0-uie-window" class="topic-header">Window<a style="margin-left:auto; font-weight:normal; font-size:10pt;" id="copy-anchor" data-section="flexigui-1.0-uie-window">Copy link</a></h2>
+
+				<img src="/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px">
+
+				<p>Draws a graphical window, with customizable header text and empty content. This UI element is purely for aesthetic purposes</p>
+				
+				<h3 class="topic-header">Parameters</h3>
+
+				<img src="/media/placeholder-thumbnail.png" class=main-imageframe style="height:100px">
+
+				<ul>
+					<li><b>x, y</b> Define the top-left corner position of the box.</li>
+					<li><b>w, h</b> Define the width and height of the box.</li>
+					<li><b>color</b> Define the color of the box, written in hexadecimal RGB (like RRGGBB, not #RRGGBB nor 0xRRGGBB)</li>
+					<li><b>name</b> Define the name of the window, which will be displayed on the window's header.</li>
+				</ul>
+
+				<!-- FlexiGUI 1.0 Element - Print Log -->
+
+				<h2 id="flexigui-1.0-uie-print-log" class="topic-header">Print Log<a style="margin-left:auto; font-weight:normal; font-size:10pt;" id="copy-anchor" data-section="flexigui-1.0-print-log">Copy link</a></h2>
+
+				<img src="/media/placeholder-thumbnail.png" class=main-imageframe style="height:200px">
+
+				<p>Writes the entire content of the list '_Logs' on the screen.</p>
+				
+				<h3 class="topic-header">Parameters</h3>
+
+				<img src="/media/placeholder-thumbnail.png" class=main-imageframe style="height:100px">
+
+				<ul>
+					<li><b>x, y</b> Define the top-left corner position of the text.</li>
+					<li><b>b</b> Define the text brightness.</li>
+					<li><b>t</b> Used to serve a purpose, this parameter now does nothing and isn't connected to anything.</li>
+					<li><b>m</b> Define the maximum ammount of lines the element will write.</li>
+				</ul>
 			</main>
 		
 		</div>
